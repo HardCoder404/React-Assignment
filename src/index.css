@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@media (max-width: 768px) {
+  .responsive-done .ant-table-cell{
+    padding: 0px !important;
+  }
+}
+
+.my-custom-table .ant-pagination-item {
+  background-color: #A93235;
+  color: #F5EDED;
+}
+
+.my-custom-table .ant-table-content::-webkit-scrollbar{
+  display: none;
+}
+
+.my-custom-table .ant-table-content{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: thin;  /* Firefox */
+}
+
+.my-custom-table .ant-pagination-item a {
+  color: #F5EDED; 
+}
+
+.mobile-pagination .my-custom-table{
+  width: 100%!important;
+}
+.my-custom-table .ant-pagination-item-active a {
+  color: #F5EDED!important;
+}
+
+.row-even {
+  background-color: #f8f9ff;
+  /* padding: 10px !important;
+  margin: 10px !important; */
+}
+
+.row-odd {
+  background-color: white;
+}
+
+
+.mobile-table{
+  background-color: #EDDEDE!important;
+  padding: 20px 0px;
+}
+
+.mobile-table:hover{
+  /* //black shadow on hover */
+  box-shadow: 0px 0px 10px 10px rgba(13, 13, 13, 0.282);
+}
+
+.odd-col-mobile, .even-col-mobile{
+  background-color: white!important;
+  display: flex !important;
+  gap: 20px;
+  justify-content: space-between !important;
+  padding: 8px 0px;
+  padding-left: 10px;
+  margin: 0px !important;
+}
+
+.odd-col-mobile h4, .even-col-mobile h4{
+  width: 100%;
+}
+
+.odd-col-mobile h2, .even-col-mobile h2{
+  width: 200px;
+}
+
+.odd-col-mobile h2{
+  font-weight: 600!important;
+}
+.even-col-mobile h2{
+  font-weight: 600!important;
+  padding: 10px 0px;
+}
+
+.even-col-mobile div, .odd-col-mobile div{
+  width: 100%;
+  justify-content: center;
+}
+
+.even-col-mobile h4, .even-col-mobile div{
+  display: flex;
+  padding: 10px 5px;
+  align-items: center;
+  background-color: #EDDEDE!important;
+}
